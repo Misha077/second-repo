@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      onclick="console.log('button clicked')"
+      ondblclick="console.log('button double clicked')"
+      onmouseenter="console.log('mouse enter')"
+    >
+      submit
+    </button>
+
+    <button onclick="hello(event)" onmousemove="mouseMoved(event)">
+      Cancel
+    </button>
+
+    <button
+      ondrag="elementDragged()"
+      ondragend="dragEventEnd(event)"
+      ondragstart=""
+      onclick="hello(event)"
+      onmousemove="mouseMoved(event)"
+      draggable="true"
+    >
+      ok
+    </button>
+
+    <img
+      src="https://picsum.photos/100"
+      alt=""
+      draggable="true"
+      ondragstart="imageDragStart(event)"
+      ondragend="imageDragStopped(event)"
+      ontouchend="console.log('Image Touched')"
+    />
+
+    <script>
+      function imageDragStart() {
+        console.log("image Grag Start");
+      }
+
+      function hello(e) {
+        console.log(e);
+        console.log("hello World");
+      }
+
+      function mouseMoved(e) {
+        console.log(e.target);
+      }
+
+      function dragEvent(e) {
+        console.log(e.target);
+      }
+
+      function elementDragged(e) {
+        console.log(e.target);
+      }
+    </script>
+  </body>
+</html>

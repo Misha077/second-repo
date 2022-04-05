@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+
+:root {
+  --primary--peach: #e7816b;
+  --primary--black: #1d1c1e;
+  --primary--white: #ffffff;
+
+  --secondary--peach: #ffad98;
+  --secondary--peach: #331316;
+  --secondary--peach: #f1f3f5;
+
+  --primary--font: "Jost";
+}
+
+body {
+  font-family: val(--primary--font);
+}
+/*tYPOGRAPHY CLASSES START */
+.a-title--1 {
+  color: var(--primary--black);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+/* button classes start */
+.btn {
+  height: 55px;
+  font-weight: 157px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500px;
+}
+.a-navbar ul a {
+  text-decoration: none;
+  font-weight: 400;
+}
+.a-navbar img {
+  width: 40px;
+}
+
+.section-2 .container {
+  background: url("./picture/bg1.jpg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .section-2.container {
+    background: url("./picture/mobile.png");
+    background-position: bottom center;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./array.js">
+      /* for loop */
+      // let numbers = [32, 65, 97, 56];
+      //size = numbers.length;
+      // for (let i = 0; i < size; i++) {
+      // console.log(numbers[i]);
+      // }
+
+      /* forof loop */
+      //for (let el of numbers) {
+      //console.log(el);
+      //}
+      function generateRandomNumber(digit) {
+        return parseInt(Math.random() * 10 ** digit);
+      }
+
+      let numbers = [];
+      for (let i = 0; i < 1000; i++) {
+        let random = generateRandomNumber[3];
+        numbers.push(random);
+      }
+
+      let len = numbers.length;
+      console.time("for");
+      for (let index = 0; index < len; index++) {
+        const element = number[index];
+      }
+
+      console.timeEnd("for");
+
+      console.timeEnd("for-of");
+
+      for (let el of numbers) {
+        console.timeEnd("for-of");
+      }
+    </script>
+  </body>
+</html>
